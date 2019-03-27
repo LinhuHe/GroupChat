@@ -73,7 +73,7 @@ public class Chatroom extends JFrame implements Server.OnServiceListener, Action
     }
 
     @Override
-    public void onClientChanged(List<Client> clients) {  //抽象函数具体化
+    public void onClientChanged(List<Client> clients) {  //调用于service中的同步
         // TODO Auto-generated method stub
         clientList.setListData(clients.toArray());
     }

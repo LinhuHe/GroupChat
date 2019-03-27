@@ -166,11 +166,11 @@ public class Register extends AppCompatActivity {
 
 
             } catch (MalformedURLException e) {
-                Log.e("TAG", "URL - " + e);
+                Log.e("169-TAG", "URL - " + e);
                 feedback.setError_message(e.toString());
                 return feedback.FAIL;
             } catch (IOException e) {
-                Log.e("TAG", "openConnection() - " + e);
+                Log.e("173-TAG", "openConnection() - " + e);
                 feedback.setError_message(e.toString());
                 return feedback.FAIL;
             } finally {
@@ -197,7 +197,7 @@ public class Register extends AppCompatActivity {
             } else {
                 btnRegister.setClickable(true);
                 Toast.makeText(getApplication(), feedback.getError_message(), Toast.LENGTH_SHORT).show();
-                Log.e("tag",feedback.getError_message());
+                Log.e("200-tag",feedback.getError_message());
             }
 
         }

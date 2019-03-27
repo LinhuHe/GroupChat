@@ -22,7 +22,7 @@ public class Config {
     public String URL_LOGIN = "https://mpianatra.com/Courses/api/login.php";
 
     //Register
-    public String URL_REGISTER = "https://mpianatra.com/Courses/api/pic_register1.php";
+    public String URL_REGISTER = "https://mpianatra.com/Courses/api/register.php";
 
     public String getLoginUrl() {
         return URL_LOGIN;
